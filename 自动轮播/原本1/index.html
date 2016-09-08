@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Crow,时生,q125759748</title>
+<link rel="stylesheet" type="text/css" href="css/basic.css"/>
+</head>
+<body>
+<div class="main">
+	<ul class="main_pic">
+		<li><img src="images/big/a1.png"><span>No.1</span></li>
+		<li><img src="images/big/a2.png"><span>No.2</span></li>
+		<li><img src="images/big/a3.png"><span>No.3</span></li>
+		<li><img src="images/big/a4.png"><span>No.4</span></li>
+		<li><img src="images/big/a5.png"><span>No.5</span></li>
+		<li><img src="images/big/a6.png"><span>No.6</span></li>
+		<li><img src="images/big/a7.png"><span>No.7</span></li>
+		<li><img src="images/big/a8.png"><span>No.8</span></li>
+	</ul>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/PicTab.js"></script>
+<script>
+
+$(function() {
+	$(".main").PicTab({
+		aTime: 1000,	//设置动画时间
+		tTime: 3000, //设置轮播时间
+		imgStep:3	//每页显示多少张缩略图
+	});
+});
+</script>
+</body>
+</html>

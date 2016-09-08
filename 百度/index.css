@@ -1,0 +1,323 @@
+body,
+.container{
+    position: relative;
+    margin:0;
+    padding:0;
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    font-family: "arial";
+    display: block;
+    overflow: hidden;
+}
+/*顶部样式*/
+.head{
+    height: 34px;
+    display: block;
+
+}
+.head-right{
+    float: right;
+   margin-top: 20px;
+  
+
+
+}
+.head-right a{
+    margin-left: 20px;
+    color: #333;
+    font-weight: bold;
+    font-size: 13px;
+    
+}
+.head-right a:hover{
+    color: #00c;
+
+}
+
+.setting-submenu:before{
+    content: '';
+    width: 0;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+    display: block;
+    position: absolute;
+
+    border: 5px solid transparent;
+    border-bottom-color: white;
+    
+    border-style: dashed dashed solid dashed;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -3px;
+    
+}
+.setting-submenu{
+    display: none;
+    width: 70px;
+    height: 100px;
+    position: absolute;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 8px #ddd;
+    float: right;
+    right: 83px;
+    top: 40px;
+    text-align: center;   
+}
+
+.setting-submenu a{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    display: inline-block;
+    height: 25px;
+    width: 70px;
+    line-height: 25px;
+  
+}
+
+.setting-submenu a:hover{
+    background-color: rgb(51,133,255);
+    color: white;
+    font-weight: normal;
+
+}
+.head .denglu,
+.head .setting{
+    font-weight: normal;
+}
+/*中间样式*/
+
+
+.wrapper{
+    width: 100%;
+    height: 76.4%;
+    position: relative;
+}
+
+/*logo*/
+img{
+    right: 50%;
+    margin-right: -90px;
+    display: block;
+    position: absolute;
+    top: 100px;
+}
+#form{
+    position: relative;
+    width: 100%;
+    top: 250px;
+ height: 37px;
+
+}
+.form{
+    width: 610px;
+     height: 39px;
+    right: 50%;
+    margin-right: -260px;
+    display: block;
+    position: absolute;
+}
+
+.input-text
+{
+    width: 500px;
+    height: 30px;
+    border: none;
+    left: 4px;
+    position: relative;
+    top: 4px;
+     outline:medium;
+     font-size: 14px;
+}
+.input-btn{
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: rgb(51,133,255);
+    border: none;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+.form-1{
+    display: inline-block;
+    width: 503px;
+    height: 36px;
+    border: 1px solid rgb(49,126,243);
+
+}
+.form-2{
+    display: inline-block;
+    width: 100px;
+    height: 36px;
+    border: 1px solid rgb(51,133,255);
+    background-color: rgb(51,133,255);
+}
+
+/*更多产品*/
+.head-right .briicon{
+    background-color: rgb(51,133,255);
+    color: white;
+    margin:20px;
+    font-weight: normal;
+    padding:5px;
+    text-decoration: none;
+}
+.moreproduce{
+    z-index: 99;
+    color: #333;
+    text-align: center;
+    width: 88px;
+   
+    right: 0;
+    top: 0;
+    height: 100%;
+    background-color: #f9f9f9;
+    font-size: 13px;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    overflow: hidden;
+}
+.moreproduce a{
+    color: rgb(102,102,102);
+    text-decoration: none;
+    padding-bottom: 12px;
+    display: block;
+    font-size: 13px;
+    border-bottom: 1px solid rgb(240,240,240);
+}
+.moreproduce span{
+    height: 36px;
+    display: block;
+    margin: 10px auto 5px;
+    background: url(images/more.png) no-repeat;
+    cursor: pointer;
+}
+
+.moreproduce .pro-produce{
+    color: #333;
+    text-align: center;
+    width: 66px;
+    height: 43px;
+    line-height: 43px;
+    padding-top: 9px;
+
+    margin: 0 auto;
+    border-bottom: 1px solid rgb(240,240,240);
+    font-size: 13px;
+    cursor: default;
+}
+.moreproduce .pro-music{
+    background-position: -72px 0;
+    width: 40px;
+}
+.moreproduce .pro-img{
+    background-position: -112px 0;
+    width: 35px;
+}
+.moreproduce .pro-zhidao{
+    background-position: -36px 0;
+    width: 36px;
+}
+.moreproduce .pro-wenku{
+    background-position: -148px 0;
+    width: 35px;
+}
+.moreproduce .pro-bang{
+    background-position: -184px 0;
+    width: 35px;
+}
+.moreproduce .pro-tuiguang{
+    background-position: -220px 0;
+    width: 35px;
+}
+.moreproduce .allproduce{
+    color: rgb(102,102,102);
+    
+}
+/*底部*/
+.footer{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+}
+#code-left{
+    position: relative;
+    height: 60px;
+    left: 614px;
+
+}
+
+
+.code-image1{
+    background: url(images/2.png)0 0 no-repeat;
+    float: left;
+    width: 60px;
+    height: 60px;
+}
+.left-text{
+    float: left;
+    color: #999;
+    line-height: 23px;
+    margin: 8px 0 0 10px;
+}
+#code-left .left-text b{
+    color: #4c4c4c;
+
+}
+#code-right .right-text b{
+    color: #4c4c4c;
+    
+}
+#code-left p{
+    margin: 0;
+}
+.codeleft-item-2{
+    
+    position: relative;
+    
+    left: 12px;
+}
+.code-image2{
+    background: url(images/3.png)0 0 no-repeat;
+    float: left;
+    width: 60px;
+    height: 60px;
+}
+#code-right{
+    display: inline-block;
+    text-align: left;
+    margin-left: 205px;
+    position: relative;
+    top: -59px;
+    color: #999;
+}
+#h1{
+    margin-bottom: 5px;
+}
+#h2{
+    margin-top: 0;
+}
+#h1 a{
+    text-decoration: none;
+    color: #4c4c4c;
+}
+#h2 a{
+    text-decoration: none;
+    color:#999;
+}
+.h2-image{
+    background: url(images/4.png);
+    background-position: -600px -96px;
+    width: 14px;
+    height: 17px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    top: 3px;
+}

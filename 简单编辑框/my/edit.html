@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <meta charset="utf-8" http-equiv="Content-Type" content="text/html">
+
+    <title>芙蓉编辑</title>
+    <link rel="stylesheet" href="edit.css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="main_b">
+                <div class="item">
+                    <ul class="toolbar">
+                        <li class="toolbar_word">
+                            <a href="#" class="toolbar-bold" title="文字加粗"></a>
+                            <a href="#" class="toolbar-i" title="文字斜体"></a>
+                            <a href="#" class="toolbar-underline" title="文字加下划线"></a>
+                            <a href="#" class="toolbar-color" title="设置文字颜色"></a>
+                            <a href="#" class="toolbar-background" title="设置文字背景"></a>
+                        </li>
+                        <li class="toolbar_link">
+                            <a href="#" class="toolbar-link" title="添加链接"></a>
+                            <a href="#" class="toolbar-removelink" title="取消链接"></a>
+                        </li>
+                        <li class="toolbar_list">
+                            <a href="#" class="toolbar-order" title="排序的列表"></a>
+                            <a href="#" class="toolbar-unorder" title="非排序的列表"></a>
+                        </li>
+                        <li class="toolbar_text">
+                            <a href="#" class="toolbar-text_left" title="文本左对齐"></a>
+                            <a href="#" class="toolbar-text_right" title="文本右对齐"></a>
+                            <a href="#" class="toolbar-text_middle" title="文本居中"></a>
+                        </li>
+                    </ul>
+                </div>
+                <textarea class="input-box" placeholder=" 请输入指定内容"></textarea>
+                <span class="notice"></span>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+        $(function(){
+            //选中工具栏的某一个项，进行选中样式
+            $("li a").click(function(){
+                $(this).toggleClass("click_cur")
+            });
+            //对鼠标选中的内容进行操作
+            var text = window.getSelection().toString();
+                $(".toolbar-bold").click(text.bold());
+            
+            
+            
+            
+            //每一个项的作用
+            
+            $(".toolbar-i").click(function(){
+                $("textarea").toggleClass("click_i")
+            });
+            $(".toolbar-underline").click(function(){
+                $("textarea").toggleClass("click_underline")
+            });
+            $(".toolbar-color").click(function(){
+                $("textarea").toggleClass("click_color")
+            });
+            $(".toolbar-background").click(function(){
+                $("textarea").toggleClass("click_background")
+            });
+            $(".toolbar-text_left").click(function(){
+                $("textarea").toggleClass("click_left")
+            });
+            $(".toolbar-text_right").click(function(){
+                $("textarea").toggleClass("click_right")
+            });
+            $(".toolbar-text_middle").click(function(){
+                $("textarea").toggleClass("click_middle")
+            });
+            //计算文本输入数字个数
+            $("textarea").keyup(function(){
+                var max = 100;
+                var sheng = 0;
+                if($("textarea").val().length > max){
+                    $("textarea").text( $("textarea").val().substring(0,max));
+                    $(".notice").text("你输入的内容超出了字数限制");
+                }else{
+                    sheng = max - $("textarea").val().length;
+                    $(".notice").html("还剩<bold>"+sheng+"</bold>个字");
+                }
+            });
+            
+        })            
+    </script>
+</html>

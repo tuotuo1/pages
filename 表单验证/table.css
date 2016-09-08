@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+}
+form{
+    position: absolute;
+    top: 20%;
+    display: block;
+    font-size: 14px;
+    color: black;
+    font-family:"Arial,Times New Roman"; 
+}
+.msg{
+    
+    display: none;
+}
+.text{
+    display: inline-block;
+    width: 300px;
+    height: 43px;
+    position: relative;
+    font-size: 14px;F
+    
+}
+
+.submmitBtn{
+    display: block;
+    left: 800px;
+    width: 250px;
+    height: 40px;
+    font-size: 14px;
+    background-color: rgb(255,64,1);
+    position: relative;
+    top: 25px;
+    font-weight: bold;
+    border-radius: 3px;
+    color: white;
+    border-color: transparent;
+    
+}
+.submmitBtn:hover{
+    background-color: rgb(247,64,1);
+}
+#count{
+    display: block;
+    left: 800px;
+    visibility: hidden;
+    width: 60px;
+    position: relative;
+    margin:5px 0;
+    font-weight: normal;
+    color: gray;
+}
+span{   
+    display: inline-block;
+    width:800px;
+    height: 43px;
+    line-height: 43px;
+    text-align: right;
+    
+}
+.grade,
+.active{
+    display: inline-block;
+    width: 100px;
+    height: 14px;
+    line-height: 14px;
+    font-size: 14px;
+    font-style: normal;
+    background-color: rgb(250,187,115);
+    position: relative;
+    margin: 3px 0 10px 0;
+    text-align: center;
+    color: white;
+    left: 800px;
+}
+.active{
+    background-color: rgb(238,45,22);
+}

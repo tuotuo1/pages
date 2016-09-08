@@ -1,0 +1,63 @@
+<!DOCTYPE htmlPUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<meta charset="utf-8">
+<head>
+    <title></title>
+<style type="text/css">
+.image-layer{
+    width: 1024px;
+    height: 512px;
+    display: block;
+    position: relative;
+    text-align: center;
+}
+.image-layer:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-style: solid;
+    border-width: 0;
+    border-color: rgba(0,0,0,0.3) #fff;
+    border-radius: 0 0 0 4px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+    transition:all 0.4s ease-out;
+
+}
+.image-layer:hover:before{
+    border-right-width: 100px;
+    border-bottom-width: 100px;
+}
+.image-layer:active:before{
+    border-right-width: 1024px;
+    border-bottom-width: 512px;
+}
+.paper-flip.folded .image-layer:before{
+    border-right-width: 1024px;
+    border-bottom-width: 512px;
+}
+</style>
+<script type="text/javascript">
+    document.getElementById('paper-flip').addEventListener("click",function(e){
+        if(e.target.className=="btn-close"){
+            this.className = "paper-flip";
+        }
+        else{
+            this.className = "paper-flip folded";
+        }
+    });
+</script>
+<body>
+<div class="paper-flip" id="paper-flip">
+    <div class="btn-wrap">
+        <a class="btn btn-facebook">Facebook</a>
+        <a class="btn btn-twitter">twitter</a>
+        <a class="btn btn-google">google</a>
+    </div>
+    <span class="btn-close">x</span>
+</div>
+<div class="image-layer" id="image-layer">
+    <img src="2.jpg"/>
+</div>
+</body>
+</html>

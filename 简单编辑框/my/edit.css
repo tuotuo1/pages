@@ -1,0 +1,150 @@
+/*标签初始化*/
+    body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
+    body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; }
+    h1, h2, h3, h4, h5, h6{ font-size:100%; }
+    address, cite, dfn, em, var { font-style:normal; }
+    code, kbd, pre, samp { font-family:couriernew, courier, monospace; }
+    small{ font-size:12px; }
+    ul, ol { list-style:none; }
+    a { text-decoration:none; color: #fff;}
+    a:hover { text-decoration:none; }
+    sup { vertical-align:text-top; }
+    sub{ vertical-align:text-bottom; }
+    legend { color:#000; }
+    fieldset, img { border:0; }
+    button, input, select, textarea { font-size:100%; }
+    table { border-collapse:collapse; border-spacing:0; }
+    *{font-size: 14px;font-family: arial;color:#666;}
+ .cf{
+    zoom:1;
+}
+.cf:after{/*清除浮动*/
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    content: '';
+}
+.container{
+    margin: 50px auto 0;
+    position: relative;
+}
+.main{
+    width: 600px;
+    height: 300px;
+    border: 5px solid sandybrown;
+    margin: 0 auto ;
+}
+.main_b{
+    width: 598px;
+    height: 298px;
+    border: 1px solid red;
+}
+.item{
+    height: 40px;
+    background: #ddd;
+}
+.toolbar{
+    display: block;
+    list-style: none;
+    height: 40px;
+}
+.toolbar li{
+    display: inline;
+    border-right: 1px solid #eee;
+    padding: 0 5px;
+    line-height: 40px;
+}
+ li a{
+    display: inline-block;
+    margin: 2px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ddd;
+    background: url(images/edit.png) no-repeat;
+    vertical-align: middle;
+    outline: none;
+
+}
+li a:hover{
+    border: 1px solid dodgerblue;
+    
+}
+
+.toolbar-i{
+    background-position: 0 -27px;
+}
+.toolbar-underline{
+    background-position: 0 -52px;
+}
+.toolbar-color{
+    background-position: 0 -78px;
+}
+.toolbar-background{
+    background-position: 0 -104px;
+}
+.toolbar-link{
+    background-position: 0 -130px;
+}
+.toolbar-removelink{
+    background-position: 0 -158px;
+}
+.toolbar-order{
+    background-position: 0 -208px;
+}
+
+.toolbar-unorder{
+    background-position: 0 -182px;
+}
+.toolbar-text_middle{
+    background-position: 0 -260px;
+}
+.toolbar-text_right{
+    background-position: 0 -286px;
+}
+.toolbar-text_left{
+    background-position: 0 -234px;
+}
+textarea{
+    border: none;
+    height: 258px;
+    width: 598px;
+    resize: none;
+    outline: 0;
+}
+/*jq要加的代码*/
+.click_cur{
+    background-color:  #f2f2f2;
+    border: 1px solid #09c;
+}
+.click_bold{
+    font-weight: bold;
+}
+.click_i{
+    font-style: italic;
+}
+.click_underline{
+    text-decoration: underline;
+}
+.click_color{
+    color: mediumvioletred;
+}
+.click_background{
+    background: cornflowerblue;
+}
+.click_left{
+    text-align: left;
+}
+.click_right{
+    text-align: right;
+}
+.click_middle{
+    text-align: center;
+}
+.notice{
+    display: block;
+    text-align: right;
+    top: 10px;
+    position: relative;
+}

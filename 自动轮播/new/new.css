@@ -1,0 +1,115 @@
+/*标签初始化*/
+    body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
+    body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; }
+    h1, h2, h3, h4, h5, h6{ font-size:100%; }
+    address, cite, dfn, em, var { font-style:normal; }
+    code, kbd, pre, samp { font-family:couriernew, courier, monospace; }
+    small{ font-size:12px; }
+    ul, ol { list-style:none; }
+    a { text-decoration:none; color: #000;}
+    a:hover { text-decoration:none; }
+    sup { vertical-align:text-top; }
+    sub{ vertical-align:text-bottom; }
+    legend { color:#000; }
+    fieldset, img { border:0; }
+    button, input, select, textarea { font-size:100%; }
+    table { border-collapse:collapse; border-spacing:0; }
+    *{font-size: 14px;font-family: arial;}
+.cf{
+    zoom:1;
+}
+.cf:after{/*清除浮动*/
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    content: '';
+}
+.container{
+    margin: 100px auto 0;
+    position: relative;
+}
+.banner {
+    width: 980px;
+    height: 340px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.banner img{
+    display: block;
+    margin: 0 auto;
+}
+.img{
+    list-style: none;
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    height: 340px;
+}
+.img li{
+    float: left;
+    display: inline-block;
+}
+.img img{
+    width: 980px;
+}
+
+.circle{
+    position: absolute;
+    top: 310px;
+    width: 980px;
+    text-align: center;
+    height: 18px;
+}
+.circle ul{
+    display: block;
+    width: 100%;
+}
+.circle li{
+    display: inline-block;
+    width: 80px;
+    height: 10px;
+    
+    background-color: rgba(0,0,0,.5);
+    
+}
+.little-cir .active{
+    background-color: #fff;
+     
+}
+.little-cir img{
+    width: 80px;
+    height: 45px;
+    top: -70px;
+    position: absolute;
+    opacity: 0;
+}
+.little-cir li:hover img{
+    top: -42px;
+    transition: all 0.5s;
+    opacity: 1;
+}
+.arrow_l {
+    display: block;
+    background: url(images/arrow-l.png) no-repeat;
+    left: 40px;
+    
+}
+.btn span{
+    display: block;
+    top: 50%;
+    margin-top: -13px;
+    width: 15px;
+    height: 25px;
+    color: #fff;
+    position: absolute;
+    
+}
+.arrow_r {
+    display: block;
+    background: url(images/arrow-r.png) no-repeat;
+    right: 40px;
+    
+}

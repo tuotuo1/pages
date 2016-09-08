@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Crow_百叶窗</title>
+<script type="text/javascript" src="js/jquery-1.4.2.js"></script>
+<script type="text/javascript" src="js/baiye.js"></script>
+<script type="text/javascript">
+$(function() {
+	$("#bai_main_div").baiye();
+})
+</script>
+<style type="text/css">
+#bai_main_div {
+	margin:0 auto;
+	background:#000;
+	width:1000px;
+	height:526px;
+	overflow:hidden;
+}
+.bai_btn {
+	width:60px;
+	cursor:pointer;
+	opacity:.5;
+	filter:alpha(opacity=50);
+}
+</style>
+</head>
+<body>
+<div id="bai_main_div">
+  <div><img class="bai_img" src="images/1.jpg" alt="点击查看更多"/><img class="bai_btn" src="images/q1.jpg" /></div>
+  <div><img class="bai_img" src="images/2.jpg" alt="点击查看更多"/><img class="bai_btn" src="images/q2.jpg" /></div>
+  <div><img class="bai_img" src="images/3.jpg" alt="点击查看更多"/><img class="bai_btn" src="images/q3.jpg" /></div>
+  <div><img class="bai_img" src="images/4.jpg" alt="点击查看更多"/><img class="bai_btn" src="images/q4.jpg" /></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>js入门练习——倒计时</title>
+<link rel="stylesheet" type="text/css" href="../css/basic.css" />
+<script type="text/javascript">
+window.onload = function()
+{
+	var oInputYear = document.getElementById("setYear");/*获取用户输入的年*/
+	var oInputMonth = document.getElementById("setMonth");/*获取用户输入的月*/
+	var oInputDate = document.getElementById("setDate");/*获取用户输入的日*/
+	
+	var oBtn = document.getElementById("btn");/*获取倒计时按钮*/
+	
+	var oGetTime = document.getElementById("getTime");/*获取用户输入的年月日*/
+	
+	var oSetDate = document.getElementById("showDates");/*获取倒计时-天*/
+	var oSetHour = document.getElementById("showHours");/*获取倒计时-小时*/
+	var oSetMin = document.getElementById("showMinutes");/*获取倒计时-分*/
+	var oSetSec = document.getElementById("showSeconds");/*获取倒计时-秒*/
+	/*定义函数：补0*/
+	function setDigit(num,n){
+		var str = "" + num;
+		while(str.length < n)
+		{
+			 str = "0" + num;
+		}
+			return str;
+		}
+	/*点击倒计时按钮，进入倒计时*/
+	oBtn.onclick = function()
+	{
+		oGetTime.innerHTML = oInputYear.value + "年" + oInputMonth.value + "月" + oInputDate.value + "日";	/*显示用户输入的年月日*/	
+		setInterval(updateTime, 1000);/*执行倒计时定时器*/
+		updateTime();
+	}
+	/*定义倒计时函数*/
+	function updateTime()
+	{
+		var oDateEnd = new Date();/*实例化当前系统时间，装载“用户输入时间”*/
+		var oDateNow = new Date();/*实例化当前系统时间，装载“当前时间”*/
+		oDateEnd.setFullYear(parseInt(oInputYear.value));/*设置时间-年*/
+		oDateEnd.setMonth(parseInt(oInputMonth.value)-1);/*设置时间-月*/
+		oDateEnd.setDate(parseInt(oInputDate.value));/*设置时间-日*/
+		oDateEnd.setHours(0);/*设置时间-小时*/
+		oDateEnd.setMinutes(0);/*设置时间-分*/
+		oDateEnd.setSeconds(0);/*设置时间-秒*/
+		
+		/*求得“用户输入时间”距离“当前时间”差秒数*/
+		var iTimes = (oDateEnd.getTime()-oDateNow.getTime())/1000;
+		
+		/*差秒数小于0，跳出程序*/
+		if(iTimes < 0){return}; 
+		/*获取差秒数中，整天数*/
+		var iDate = parseInt(iTimes /(24*3600));
+		iTimes %= (24*3600);
+		
+		/*获取差秒数中，整小时数*/
+		var iHour = parseInt(iTimes / 3600);
+		iTimes %= 3600;
+		/*获取差秒数中，整分钟数*/
+		var iMin = parseInt(iTimes /60);
+		iTimes %= 60;
+		
+		/*获取差秒数中，秒数*/
+		var iSec = iTimes;
+		
+		oSetDate.innerHTML = setDigit(iDate, 3);/*显示倒计时时间-天*/
+		oSetHour.innerHTML = setDigit(iHour, 2);/*显示倒计时时间-小时*/
+		oSetMin.innerHTML = setDigit(iMin, 2);/*显示倒计时时间-分*/
+		oSetSec.innerHTML = setDigit(iSec, 2);/*显示倒计时时间-秒*/
+	}
+}
+</script>
+</head>
+
+<body>
+	<div class="container">
+  	<h1>开始倒计时</h1>
+  	<p>请输入：<input type="text" id="setYear" value="2012" />年<input type="text" id="setMonth" value="10" />月<input type="text" id="setDate" value="31" />日</p>
+    <button id="btn">倒计时</button>
+    <p>现在距离.<strong id="getTime">0000年00月00日</strong>.还剩</p>
+    <p class="container_times"><span id="showDates">000</span>天<span id="showHours">00</span>小时<span id="showMinutes">00</span>分<span id="showSeconds">00</span>秒</p>
+  </div>
+</body>
+</html>

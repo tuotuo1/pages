@@ -1,0 +1,361 @@
+body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: rgb(240,240,240);
+    margin:0;
+    padding: 0;
+}
+div{
+    margin:0;
+    padding: 0;
+}
+a{text-decoration: none;}
+*{
+    box-sizing: border-box;
+    font-family: "微软雅黑","Helvetica Neue",Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+#cf{
+    zoom:1;
+}
+#cf:after{/*清除浮动*/
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    content: '';
+}
+.header{
+    
+    background-size: cover;
+    position: relative;
+    z-index: 100;
+    min-height: 335px;
+    
+    height: 639px;
+    overflow: hidden;
+}
+.top-wrapper{
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    height: 39px;
+    background: linear-gradient(to bottom,rgba(0,0,0,.6) 0,rgba(0,0,0,0) 100%);
+}
+.top{
+    margin: 0 10%;
+    width: 80%;
+}
+.logo{
+    float: left;
+    margin: 5px 0;
+}
+.logo-l{
+    float: right;
+    margin-top: 7px;
+}
+.logo img{
+    width: 29px;
+    height: 26px;
+}
+.logo-l .login{
+    display: inline-block;
+    width: 63px;
+    height: 23px;
+    line-height: 23px;
+    text-align: right;
+    position: relative;
+}
+.logo-l a{
+    color: #fff;
+    font-size: 13px;
+}
+.logo-l .zhuce{
+    margin-left: 25px;
+}
+.icon{
+    margin-right: 8px;
+    width: 23px;
+    height: 23px;
+    background-size: 23px 23px;
+    vertical-align: middle;
+    display: inline-block;
+}
+.icon1{
+    background:url(images/4.svg);
+}
+.icon2{
+    background:url(images/5.svg);
+}
+.search{
+    width: 433px;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 6px;
+    z-index: 2;
+}
+.search-top{
+    height: 117px;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: rgba(255,255,255,0.5);
+}
+.search-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-image: url(images/6.svg);
+    background-size: 100% 100%;
+    width: 160px;
+    height: 44px;
+
+}
+.flex{
+    flex:1;
+    transition: all 0.3s ease-in-out;
+    display: inherit;
+}
+.flex .sr-input{
+    font-size: 12px;
+    display: block;
+    width: 389px;
+    height: 35px;
+    border: none;
+    color: #333;
+    border-radius: 3px 0 0 3px;
+    padding: 0 10px;
+    background-color: rgba(255,255,255,0.7);
+    outline: none;
+}
+.flex .sr-btn{
+    font-size: 12px;
+    height: 35px;
+    width: 44px;
+    line-height: 35px;
+    border: 0;
+    border-radius: 0 3px 3px 0;
+    padding: 8px 0;
+    text-align: center;
+    background-color: #434343;
+}
+.icon-search{
+    margin: 0 auto;
+    background: url(images/7.svg) no-repeat;
+    width: 15px;
+    height: 16px;
+}
+.search form{
+    display: flex;
+}
+
+#thumbnail{
+    padding: 40px 0;
+    border: none;
+    text-align: center;
+    background-color: transparent;
+}
+.title{
+    position: relative;
+    font-size: 18px;
+    width: 100%;
+    margin: 0 auto;
+    border-right: 1px solid #d8d8d8;
+}
+.title .zc-bn{
+    display: inline-block;
+    width: 88px;
+    height: 88px;
+    border-radius: 88px;
+    background-color:rgb(243,100,120);
+    line-height: 88px;
+    color: #fff;
+    margin: 0 auto 20px;
+}
+.zc-bn img{
+    width: 35px;
+    margin: 24px auto;
+}
+#row{
+    border-bottom: 1px solid #d8d8d8;
+}
+.middle-text{
+    text-align: center;
+    margin-bottom: -30px;
+}
+.middle-text h3{
+    font-size: 28px;
+    margin: 45px 0 15px;
+    letter-spacing: 4px;
+}
+.middle-text p{
+    display: block;
+    font-size: 14px;
+    letter-spacing: 12px;
+    color: #373737;
+    margin-bottom: 45px;
+}
+.blank{
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+.blank .img-in{
+    width: 100%;
+    height: 195px;
+    background-color: #e1e1e1;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.img-in img{
+    width: 243px;
+    height: 182px;
+    display: block;
+}
+.img-bottom{
+    padding-left: 55px;
+    height: 54px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    line-height: 17px;
+    font-size: 12px;
+    color: #888;
+    padding: 10px;
+}
+.img-im{
+    display: block;
+}
+.img-im img{
+    position: absolute;
+    letter-spacing: 10px;
+    height: 34px;
+    width: 34px;
+    border-radius: 3px;
+    overflow: hidden;
+    left: 10px;
+}
+.img-text{
+    display: inline-block;
+    width: 199px;
+    height: 34px;
+    position: absolute;
+    left: 54px;
+}
+.tn-index{
+    padding-top: 40px;
+    border: none;
+    text-align: center;
+    background-color: transparent;
+}
+.img-text p{
+    white-space: nowrap;
+    color: #000;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 13px;
+    margin: 0;
+    text-align: left;
+}
+.con-bottom{
+    width: 100%;
+    height: 26px;
+    position: relative;
+    margin-top: 20px;
+}
+.con-line{
+    width: 100%;
+    height: 13px;
+    border-bottom: 1px solid #dcdcdc;
+}
+.con-img{
+    width: 50px;
+    background-color: #f0f0f0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    text-align: center;
+    z-index: 1;
+}
+.con-more{
+    text-align: center;
+    margin: 0 auto;
+    width: 500px;
+    padding: 60px 0 80px;
+    display: flex;
+}
+.con-zhuce{
+    flex: 1;
+}
+.con-zhuce .btn1{
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 3px;
+    display: inline-block;
+    cursor: pointer;
+}
+.con-zhuce .con-now{
+    background-color: rgb(243,100,120);
+}
+.con-m{
+    display: inline-block;
+}
+.footer-left{
+    float: left;
+    text-align: left;
+    color: #525558;
+    display: inline-block;
+}
+.footer-left p{
+    margin-top: 20px;
+}
+.footer-right{
+    float: right;
+    color: #525558;
+    display: inline-block;
+    text-align: left;
+}
+.footer-ma{
+    padding-top: 20px;
+}
+.erweima{
+    float: left;
+    font-size: 12px;
+}
+.erweima img{
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+.erweima p{
+    padding: 5px 0;
+    text-align: center;
+}
+.weixin{
+    margin-left: 50px;
+}
+@media (min-width: 768px)
+.middle .col-sm-4 img{
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.blank a>img{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}

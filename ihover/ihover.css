@@ -1,0 +1,1118 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
+body, button, input, select, textarea { font:14px/1.5tahoma, arial, \5b8b\4f53; }
+h1, h2, h3, h4, h5, h6{ font-size:100%; }
+address, cite, dfn, em, var { font-style:normal; }
+code, kbd, pre, samp { font-family:couriernew, courier, monospace; }
+small{ font-size:12px; }
+ul, ol { list-style:none; }
+a { text-decoration:none;color: #222;outline: 0; }
+a:hover { text-decoration:none; }
+sup { vertical-align:text-top; }
+sub{ vertical-align:text-bottom; }
+legend { color:#000; }
+fieldset, img { border:0; }
+button, input, select, textarea { font-size:100%; }
+table { border-collapse:collapse; border-spacing:0; }
+*{-webkit-box-sizing: border-box;}
+img{vertical-align: middle;}
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+.example{
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #fff;
+    border-width: 1px;
+    border-color: #ddd;
+    border-radius: 4px 4px 0 0;
+    box-shadow: none;
+    position: relative;
+    padding: 45px 15px 15px;
+    margin: 0 -15px 15px;
+}
+.cf:before, .cf:after{
+    content: "";
+    display: table;
+}
+.row{
+    margin: 15px;
+    position: relative;
+    height: 300px;
+    
+}
+.row p{
+    text-align: center;
+}
+.col-sm{
+    width: 50%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.circle{
+    position: relative;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    left: 250px;
+}
+.circle *{
+    box-sizing: border-box;
+}
+.demo{
+    display: block;
+    background: 0 0;
+}
+.demo:hover .spinner{
+    transform: rotate(180deg);
+}
+.demo:hover .back{
+    opacity: 1;
+}
+.spinner{
+    width: 230px;
+    height: 230px;
+    border: 10px solid #ecab18;
+    border-bottom-color: #1ad280;
+    border-right-color: #1ad280;
+    border-radius: 50%;
+    -webkit-transition: all 0.8s ease-in-out;
+}
+.circle .img{
+    position: absolute;
+    top: 10px;
+    bottom: 0;
+    left: 10px;
+    right: 0;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+}
+.circle .img img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+.back{
+    top: 10px;
+    bottom: 0;
+    left: 10px;
+    right: 0;
+    background: rgba(0,0,0,0.6);
+    opacity: 0;
+    transition: all 0.8s ease-in-out;
+    position: absolute;
+    text-align: center;
+    border-radius: 50%;
+    backface-visibility: hidden;
+}
+.back-two{
+    background: rgba(26,74,114,.6);
+}
+.back-info h3{
+    color: #fff;
+    margin-bottom: 7px;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin: 0 30px;
+    padding: 55px 0 0 0;
+    
+    text-shadow: 0 0 1px white,0 1px 2px rgba(0,0,0,0.3);
+}
+.back-info p{
+    color: #bbb;
+    padding: 10px 5px;
+    font-size: 12px;
+    font-style: italic;
+    margin: 0 30px;
+    border-top: 1px solid rgba(255,255,255,.5)
+}
+.effect2 .img2{
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+    transform: scale(1);
+    width: 220px;
+    height: 220px;
+}
+:before, :after{
+    box-sizing: border-box;
+}
+.effect2 .img2:before, .effect5 .img-in:before{
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 16px rgba(255,255,255,.6),0 1px 2px rgba(0,0,0,.3);
+    transition: all 0.35s ease-in-out;
+}
+.effect2 .info{
+   transform: translateX(-100%); 
+}
+.effect2 .info{
+    background: rgba(0,0,0,.6);
+    opacity: 0;
+    pointer-events: none;
+    transition:all 0.35s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    border-radius: 50%;
+    backface-visibility: hidden;
+}
+.effect2 .info h3, .effect5 .info h3{
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin: 0 30px;
+    padding: 55px 0 0 0;
+    margin-bottom: 7px;
+    text-shadow: 0 0 1px white,0 1px 2px rgba(0,0,0,.3);
+}
+.effect2 .info p,.effect5 .info p{
+    color: #bbb;
+    padding: 10px 5px;
+    font-size: 12px;
+    font-style: italic;
+    margin: 0 30px;
+    border-top: 1px solid rgba(255,255,255,.5)
+}
+.img2{
+    position: relative;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+}
+.img2 img, .img-in img{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+}
+
+.demo3{
+    display: block;
+}
+.demo3:hover .info{
+    opacity: 1;
+    transform: translateX(0%);
+}
+.demo3:hover .img2{
+    transform: rotate(-90deg);
+    
+}
+.effect2 .info-four{
+    transform: translateX(100%);
+    background: rgba(26,74,114,.6);
+}
+.effect2 .info-five{
+    transform: translateY(-100%);
+}
+.effect2 .info-six{
+    transform: translateY(100%);
+    background: rgba(26,74,114,.6);
+}
+.demo4{
+    display: block;
+}
+
+.demo4:hover .info{
+    opacity: 1;
+    transform: translateX(0%);
+}
+.demo4:hover .img2{
+    transform: translateX(50%) scale(.5);
+    z-index: 99;
+
+}
+#info3{
+    background: rgba(0,0,0,.8);
+}
+.effect2 .info-eight{
+    transform: translateX(100%);
+    background: #1a4a72;
+}
+.img3{
+    display: block;
+}
+.demo4:hover .img3{
+    transform: translateX(-50%) scale(.5);
+    z-index: 99;
+
+}
+.effect2 .info-nine{
+    transform: translateY(-100%);
+}
+.effect2 .info-nine {
+    transform: translateY(100%);
+    background: #1a4a72;
+}
+.effect2 .info-ten{
+    background: #1a4a72;
+}
+.img4, .img5, .img6, .img7, .img8, .img9, .img10, .img15, .img16, .img17, .img18, .img19, .img20, .img21, .img22, .img23, .img24, .img25, .img26, .img27, .img28,.img29, .img30
+    display: block;
+}
+.demo4:hover .img4{
+    transform: translateY(-50%) scale(.5);
+    z-index: 99;
+
+}
+.demo4:hover .img5{
+    transform: translateY(50%) scale(.5);
+}
+.demo4:hover .img6{
+    opacity: 0;
+    transform: translateX(100%)
+}
+.demo4:hover .img7{
+    opacity: 0;
+    transform: translateX(-100%)
+}
+
+.effect2 .info11{
+    background: #1a4a72;
+    transform: translateX(100%);
+}
+.demo4:hover .img9{
+    opacity: 0;
+    transform: translateY(-100%)
+}
+.effect2 .info10{
+    transform: translateY(100%);
+}
+.effect2 .infos11{
+    background: #1a4a72;
+    transform: translateY(-100%);
+}
+.demo4:hover .img10{
+    opacity: 0;
+    transform: translateY(100%)
+}
+.effect5 .info{
+    transform-style: preserve-3d;
+    transition: all 0.35s ease-in-out;
+}
+.demo5:hover .info{
+    transform: rotate3d(0,1,0,-180deg);
+    
+}
+.effect5{
+    perspective: 900px;
+}
+.circle .img-in{
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+    transform: scale(1);
+    width: 220px;
+    height: 220px;
+    position: relative;
+    border-radius: 50%;
+}
+.demo5:hover .info-back{
+    visibility: visible;
+}
+.effect5 .info-back{
+    visibility: hidden;
+    transform: rotate3d(0,1,0,180deg);
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+    backface-visibility: hidden;
+}
+ .circle .info{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    border-radius: 50%;
+    backface-visibility: hidden;
+    transition: all 0.4s ease-in-out;
+ }
+ .effect5.colored .info-back, .effect6.colored .info{
+    background: rgba(26,74,114,.6);
+ }
+ .demo6:hover .img16{
+    transform: scale(1.5);
+    opacity: 0;
+ }
+ .demo6:hover .info16, .demo8:hover .info18{
+    opacity: 1;
+    transform: scale(1);
+ }
+ .demo7:hover .info17{
+    opacity: 1;
+    transform: scale(1);
+     background: rgba(0,0,0,.6);
+ }
+ .effect6 .info16{
+    opacity: 0;
+    background: rgba(0,0,0,.6);
+    transform: scale(0.5);
+ }
+ .demo7 .info17{
+    opacity: 0;
+    transform: scale(1.5);
+    pointer-events: none;
+ }
+ .demo7:hover .img17, .demo8:hover .img18{
+    transform: scale(0.5);
+    opacity: 0;
+ }
+
+ .demo8 .info18{
+    opacity: 0;
+    transform: scale(0.5);
+    transition-delay: 0.2s;
+ }
+ .demo9:hover .img19,.demo10:hover .img20{
+    transform: scale(0.5);
+    opacity: 0;
+ }
+ .demo9 .info, .demo10 .info{
+    transition-delay: 0.2s;
+ }
+ .demo9:hover .info, .demo10:hover .info{
+    transform: translateX(0%);
+    opacity: 1;
+ }
+ .demo10 .info{
+    transform: translateX(100%);
+
+ }
+ .effect8 .img21{
+    transition: all 0.3s ease-in-out 0.3s;
+ }
+ .demo11:hover .img-container{
+    transform: scale(0.5);
+    
+ }
+ .demo11:hover .img21{
+    transform: translateX(-100%);
+    opacity: 0;
+    pointer-events: none;
+
+ }
+ .effect8 .img-container{
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+ }
+ .effect8 .info-container{
+    transform: translateX(100%);
+    transition: all 0.3s ease-in-out 0.3s;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    border-radius: 50%;
+    opacity: 0;
+    pointer-events: none;
+
+ }
+ .effect8 .info-right{
+    transform: translateX(-100%);
+ }
+.demo11:hover .info-container{
+    transform: translateX(0);
+    opacity: 1;
+}
+.effect8 .info-container .info{
+    transform: scale(0.5);
+    transition: all 0.35s ease-in-out 0.6s;
+    width: 100%;
+    height: 100%;
+    background: #333333;
+    pointer-events: none;
+}
+.demo11:hover .info{
+    transform: scale(1);
+    opacity: 1;
+}
+.demo12:hover .img22{
+    transform: translateX(100%);
+    opacity: 0;
+    pointer-events: none;
+}
+.effect9 .img23, .effect9 .img24{
+    transition: all 0.35s ease-out;
+    transform: translateX(0) rotate(0);
+}
+.demo13:hover .img23{
+    transform: translateX(100%) rotate(180deg);
+    opacity: 0;
+    pointer-events: none;
+}
+.demo14:hover .img24{
+    transform: translateY(100%) rotate(180deg);
+    opacity: 0;
+    pointer-events: none;
+}
+.effect9 .info{
+    background: #333333;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: scale(0.5) translateX(0);
+    transition: all 0.35s ease 0.2s;
+}
+.demo13:hover .info, .demo14:hover .info{
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+}
+.effect10 .info25, .effect10 .info26{
+    transform: scale(0);
+    opacity: 0;
+}
+.demo15:hover .info25, .demo16:hover .info26{
+    transform: scale(1);
+    opacity: 1;
+}
+.demo15:hover .img25{
+    transform: translateY(25%) scale(0.5);
+}
+.demo16:hover .img26{
+    transform: translateY(-25%) scale(0.5);
+}
+.effect10 .img25, .effect10 .img26{
+    z-index: 11;
+    transform: scale(1);
+    transition: all 0.35s ease-in-out;
+}
+.effect10 .info25 h3, .effect10 .info25p{
+    margin: 0 30px;
+    padding: 25px 0 25px 0;
+
+}
+.effect10 .info25 p,.effect10 .info26 p{
+    padding:5px;
+}
+.effect10 .info26 h3, .effect10 .info26p{
+    margin: 82px 30px 0;
+    padding: 25px 0 0 0;
+
+}
+.effect11{
+    perspective: 900px;
+}
+.effect11 .img27{
+    transform: translateZ(0) rotateY(0);
+}
+.effect11 .img0{
+    transform: translateZ(0) rotateX(0);
+}
+.effect11 .info27{
+    transform: translateZ(-1000px) rotateY(-90deg);
+    transition: all 0.35s ease 0.35s;
+}
+.effect11 .info0{
+    transform: translateZ(-1000px) rotateX(-90deg)
+}
+.demo17:hover .img27{
+    transform: translateZ(-1000px) rotateY(90deg);
+    opacity: 0;
+}
+.demo17:hover .img0{
+    transform: translateZ(-1000px) rotateX(90deg);
+}
+.demo17:hover .info27{
+    transform: translateZ(0) rotateY(0);
+    opacity: 1;
+}
+
+
+.effect12 .info28{
+    transform: translateX(100%) rotate(180deg);
+    transition: all 0.4s ease 0.4s;
+    
+}
+.effect12 .img28{
+    transform: translateX(0) rotate(0);
+}
+.demo18:hover .img28{
+    transform: translateX(100%) rotate(180deg);
+    opacity: 0;
+    pointer-events: none;
+}
+.demo18:hover .info28{
+    transform: translateX(0%) rotate(0);
+    opacity: 1;
+    
+    visibility: visible;
+
+}
+.effect12 .info29{
+    transform: translateY(100%) rotate(180deg);
+    transition: all 0.4s ease 0.4s;
+    
+}
+.effect12 .img29{
+    transform: translateY(0) rotate(0);
+}
+.demo19:hover .img29{
+    transform: translateY(100%) rotate(180deg);
+    opacity: 0;
+    pointer-events: none;
+}
+.demo19:hover .info29{
+    transform: translateY(0%) rotate(0);
+    opacity: 1;
+    
+    visibility: visible;
+
+}
+.effect13 .info30{
+    transform: translateX(0) rotate(0);
+
+}
+.demo20:hover .info{
+    opacity: 1;
+}
+
+.effect13 .info30 h3{
+    transform: translateX(-100%);
+    transition: all 0.4s ease-in-out;
+}
+.effect13 .info30 p{
+    transform: translateX(100%);
+    transition: all 0.4s ease-in-out;
+}
+.demo20:hover h3, .demo20:hover p{
+    transform: translateX(0);
+
+}
+.effect13 .info31{
+    transform: translateY(0) rotate(0);
+
+}
+.demo21:hover .info{
+    opacity: 1;
+}
+
+.effect13 .info31 h3{
+    transform: translateY(-100%);
+    transition: all 0.4s ease-in-out;
+}
+.effect13 .info31 p{
+    transform: translateY(-100%);
+    transition: all 0.4s ease-in-out;
+}
+.demo21:hover h3, .demo21:hover p{
+    transform: translateY(0);
+
+}
+
+.effect14 .img32{
+    transform-origin: 100% 50%;
+    transform: rotateY(0deg);
+    
+
+}
+.demo22:hover .img32{
+    opacity: 0;
+    transform: rotateY(90deg);
+}
+.effect14 .info32{
+    transform-origin: 0% 50%;
+    transform: rotateY(-90deg);
+    transition-delay: 0.3s;
+
+}
+.demo22:hover .info32{
+    opacity: 1;
+    transform: rotateY(0deg);
+}
+.effect14 .img33{
+    transform-origin: 50% 0%;
+    transform: rotateX(0deg);
+    
+
+}
+.demo23:hover .img33{
+    opacity: 0;
+    transform: rotateX(90deg);
+}
+.effect14 .info33{
+    transform-origin: 50% 100%;
+    transform: rotateX(-90deg);
+    transition-delay: 0.3s;
+
+}
+.demo23:hover .info33{
+    opacity: 1;
+    transform: rotateX(0deg);
+}
+.effect15 .img34{
+
+    transform: rotate(0deg) scale(1);
+    
+
+}
+.effect15 .info34{
+    
+    transform: rotate(720deg) scale(0.5);
+    transition-delay: 0.3s;
+
+}
+.demo24:hover .img34{
+    opacity: 0;
+    transform: rotate(720deg) scale(0.5);
+}
+.demo24:hover .info34{
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+.effect16 .info35{
+    opacity: 1;
+    transform: translateX(0) rotate(0deg);
+}
+.effect16 .img35{
+    transform-origin: 95% 40%;
+    transform: rotate(0);
+    z-index: 11;
+
+}
+.effect16 .img2:after{
+    content: '';
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    border-radius: 50%;
+    top: 40%;
+    left: 95%;
+    margin: -4px 0 0 -4px;
+    background:rgba(0,0,0,0.8);
+    box-shadow: 0 0 1px rgba(255,255,255,0.9)
+}
+.demo25:hover .img35{
+    transform: rotate(-120deg);
+}
+.effect17 .info36{
+    transform:  scale(0);
+}
+.demo26:hover .info36{
+    transform: scale(1);
+    opacity: 1;
+} 
+.demo26:hover p{
+    opacity: 1;
+}
+.demo26 p{
+    transition: all 0.4s ease-in-out;
+}
+.effect18 .img37{
+    transform-style: preserve-3d;
+    transform-origin: 50% 0%;
+    z-index: 13;
+}
+.demo27:hover .img37{
+    transform: rotateX(180deg);
+}
+.effect18 .info{
+    opacity: 1;
+    transform: translateX(0);
+}
+.effect18 .img38{
+    transform-style: preserve-3d;
+    transform-origin: 100% 50%;
+    z-index: 13;
+}
+.demo28:hover .img38{
+    transform: rotate3d(0,1,0,180deg);
+}
+.effect19 .info39{
+    opacity: 0;
+    transform: translateX(0) scale(0);
+
+}
+.demo29:hover .info39{
+    transform: scale(1);
+    opacity: 1;
+}
+.effect20 .img40{
+    transform-style: preserve-3d;
+    transform-origin: 50% 0%;
+    transition: all 0.4s linear;
+}
+.effect20 .info40{
+    transform-style: preserve-3d;
+    transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
+    transform-origin: 50% 0%;
+}
+.demo30:hover .img40{
+    transform: translate3d(0,280px,0) rotate3d(1,0,0,-90deg);
+    opacity: 0;
+}
+.demo30:hover .info40{
+    transform: rotate3d(1,0,0,0deg);
+    opacity: 1;
+    visibility: visible;
+}
+
+.effect20 .img41{
+    transform-style: preserve-3d;
+    transform-origin: 50% 50%;
+    transition: all 0.4s linear;
+}
+.effect20 .info41{
+    transform-style: preserve-3d;
+    transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
+    transform-origin: 50% 100%;
+}
+.demo31:hover .img41{
+    transform: translate3d(0,-220px,0) rotate3d(1,0,0,-90deg);
+    opacity: 0;
+}
+.demo31:hover .info41{
+    transform: rotate3d(1,0,0,0deg);
+    opacity: 1;
+    visibility: visible;
+}
+.ih-item, .ih-item * {
+    box-sizing: border-box;
+}
+.square{
+    position: relative;
+    width: 316px;
+    height: 216px;
+    border: 8px solid #fff;
+    box-shadow: 1px 1px 3px   rgba(0,0,0,0.3);
+    left: 200px;
+}
+.s-effect1, .s-effect3, .s-effect6{
+    overflow: hidden;
+}
+.s-effect1 .img{
+    z-index: 11;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    transform: scale(1);
+}
+.ih-item img{
+    width: 100%;
+    height: 100%;
+}
+.s-effect1 .info{
+    background: #333333;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.4s ease-in-out;
+}
+.ih-item.square .info{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    backface-visibility: hidden;
+}
+.s-effect1 .info h3{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    margin: 0;
+}
+.s-effect1 .info p{
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    margin: 0;
+    font-style: italic;
+    font-size: 12px;
+    color: #bbb;
+}
+.s-effect1 a:hover .img{
+    transform: scale(0.6);
+}
+.s-effect1 a:hover .info{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+.s-effect1 a:hover .img1{
+    transform: translateY(-30px) scale(0.6);
+}
+.s-effect1 .info1 h3{
+    padding: 10px 10px 0 4px;
+    margin: 118px 0 0 72px;
+    text-align: center;
+    
+}
+.s-effect1 .info1 p{
+    font-style: italic;
+    font-size: 12px;
+    color: #bbb;
+    padding: 5px;
+    text-align: center;
+    right: 76px;
+}
+.s-effect2 .img{
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+    transform: scale(1) rotate(0deg);
+}
+.s-effect2 .info{
+    background: #333333;
+    visibility: visible;
+    transition: all 0.4s 0.3s ease-in-out;
+    visibility: hidden;
+}
+.s-effect2 .info h3{
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    background: #111;
+    margin-top: 30px;
+    transform: translateY(-200px);
+    transition: all 0.4s 0.6s ease-in-out; 
+    padding: 10px;
+}
+.s-effect2 .info p{
+    font-size: 12px;
+    font-style: italic;
+    position: relative;
+    color: #bbb;
+    padding: 12px 20px 20px;
+    text-align: center;
+    transform: translateY(-200px);
+    transition: all 0.4s 0.5s linear;
+}
+.s-effect2 a:hover .img{
+    transform: scale(0) rotate(720deg);
+    opacity: 0;
+}
+.s-effect2 a:hover .info{
+    visibility: visible;
+}
+.s-effect2 a:hover .info h3, .s-effect2 a:hover .info p{
+    transform: translateY(0);
+}
+.s-effect3 .img{
+    transform: translateY(0);
+    transition: all 0.4s ease-in-out;
+}
+.s-effect3 .info{
+    height: 65px;
+    background: #333;
+    transition: all 0.4s ease-in-out;
+    transform: translateY(100%);
+    top: auto;
+}
+.s-effect3 .info1{
+    height: 65px;
+    background: #333;
+    transition: all 0.4s ease-in-out;
+    transform: translateY(-100%);
+    top: auto;
+}
+.s-effect3 a:hover .img{
+    transform: translateY(-50px);
+   
+}
+.s-effect3 a:hover .img1{
+    transform: translateY(50px);
+   
+}
+.s-effect3 a:hover .info{
+    transform: translateY(0%);
+    visibility: visible;
+    opacity: 1;
+}
+.s-effect3 .info h3{
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px 10px 0 4px;
+    margin-top: 4px;
+}
+.s-effect3 .info p{
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #bbb;
+    padding: 2px;
+    text-align: center;
+}
+.s-effect4{
+    overflow: hidden;
+    position: relative;
+}
+.s-effect4 .img{
+    transition: all 0.4s ease-in-out;
+}
+.s-effect4 .mask1{
+    background: rgba(26,74,114,0.6);
+    left: auto;
+    right: 0;
+    top: 0;
+    transform-origin: 100% 0%;
+    transform: rotate(56.5deg) translateX(-180px);
+}
+.s-effect4 .mask2{
+    background: rgba(26,74,114,0.6);
+    top: auto;
+    bottom: 0;
+    left: 0;
+    transform-origin: 0% 100%;
+    transform: rotate(56.5deg) translateX(180px);
+}
+.s-effect4 .mask1, .s-effect4 .mask2{
+    position: absolute;
+    height: 361px;
+    width: 361px;
+    transition: all 0.35s ease-in-out;
+}
+.s-effect4 a:hover .mask1{
+    transform: rotate(56.5deg) translateX(1px);
+}
+.s-effect4 a:hover .mask2{
+    transform: rotate(56.5deg) translateX(-1px);
+}
+.s-effect4 .info{
+    background: rgba(12,34,52,0.6);
+    height: 0;
+    visibility: hidden;
+    width: 361px;
+    transform: rotate(-33.5deg) translate(-112px,166px);
+    transform-origin: 0% 100%;
+    transition: all 0.4s ease-in-out 0.4s;
+}
+
+.s-effect4 a:hover .info{
+    width: 300px;
+    height: 120px;
+    visibility: visible;
+    top: 40px;
+    transform: rotate(0deg) translate(0,0);
+}
+.s-effect4 a:hover h3, .s-effect4 a:hover p{
+    opacity: 1
+}
+.s-effect4 .info h3{
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px;
+    background: transparent;
+    margin-top: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    opacity: 0;
+    -webkit-transition: all 0.35s ease-in-out 0.35s;
+    -moz-transition: all 0.35s ease-in-out 0.35s;
+    transition: all 0.35s ease-in-out 0.35s;
+}
+.s-effect4 .info p{
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #bbb;
+    padding: 20px 20px 20px;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: all 0.35s ease-in-out 0.35s;
+    -moz-transition: all 0.35s ease-in-out 0.35s;
+    transition: all 0.35s ease-in-out 0.35s;
+}
+.s-effect6 .img{
+    transition: all 0.4s ease-in-out;
+    transform: scale(1);
+}
+.s-effect6 a:hover .img{
+    transform: scale(1.2);
+}
+.s-effect6 .info{
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.35s ease-in-out;
+    background: rgba(0,0,0,0.6);
+}
+.s-effect6 a:hover .info{
+    visibility: visible;
+    opacity: 1;
+}
+.s-effect6 .info h3{
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px;
+    background: #111111;
+    margin: 30px 0 0 0;
+    transition: all 0.4s 0.1s ease-in-out;
+    transform: translateY(-100%);
+}
+.s-effect6 .info p{
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #bbb;
+    padding: 20px 20px 20px;
+    text-align: center;
+    transition: all 0.4s 0.1s linear;
+    transform: translateY(100%);
+}
+.s-effect6 a:hover h3, .s-effect6 a:hover p{
+    transform: translateY(0%);
+}
+.s-effect6 .info1 p{
+    transform: translateY(-100%)
+}
+.s-effect7 .info h3, .s-effect7 .info p{
+    transform: scale(4);
+}
+.s-effect7 a:hover h3, .s-effect7 a:hover p{
+    transform: scale(1);
+}
+.s-effect7 a:hover p{
+    transition-delay: 0.3s;
+}
+.s-effect12 .info{
+    transform: translate(-460px,-100px) rotate(-180deg);
+}
+.s-effect12 a:hover .info{
+    transform: translate(0px,0px) rotate(0deg);
+    opacity: 1;
+    visibility: visible;
+}
+.s-effect12 .info h3{
+    transform: translateY(-100%);
+    transition-delay: 0.3s;
+}
+.s-effect12 a:hover h3{
+    transform: translateY(0%);
+}
+
+.s-effect12 .info p{
+    transform: translateX(-300px) rotate(90deg);
+    transition-delay: 0.4s;
+}
+.s-effect12 a:hover p{
+    transform: translateX(0px) rotate(0deg);
+}
