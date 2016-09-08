@@ -60,22 +60,8 @@
     position: absolute;
     top: 310px;
     width: 980px;
-    
-    height: 10px;
-}
-.circle a{
-    width: 80px;
-    height: 10px;
-    background: #666;
-    display: block;
-    margin: 0 auto;
-}
-.circle a img{
-    width: 80px;
-    height: 45px;
-    position: absolute;
-    top: -70px;
-    
+    text-align: center;
+    height: 18px;
 }
 .circle ul{
     display: block;
@@ -89,16 +75,9 @@
     background-color: rgba(0,0,0,.5);
     
 }
-
 .little-cir .active{
     background-color: #fff;
      
-}
-.arrow_l {
-    display: block;
-    background: url(images/arrow-l.png) no-repeat;
-    left: 40px;
-    
 }
 .little-cir img{
     width: 80px;
@@ -111,6 +90,12 @@
     top: -42px;
     transition: all 0.5s;
     opacity: 1;
+}
+.arrow_l {
+    display: block;
+    background: url(images/arrow-l.png) no-repeat;
+    left: 40px;
+    
 }
 .btn span{
     display: block;
