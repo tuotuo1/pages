@@ -43,7 +43,7 @@ body{
     cursor: auto;
     position: absolute;
     z-index: 9;
-    display: block;
+    display: none;
     padding-top:15px;
 }
 #shortcut .w .fl .place .item{
@@ -151,7 +151,7 @@ border-bottom: 1px solid #EEE;
 padding-bottom: 6px;
 }
 .submenu{
-display: none;
+display: block;
 width: 715px;
 left: 220px;
 position: absolute;
