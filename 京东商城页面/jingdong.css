@@ -151,7 +151,7 @@ border-bottom: 1px solid #EEE;
 padding-bottom: 6px;
 }
 .submenu{
-display: none;
+display: block;
 width: 715px;
 left: 220px;
 position: absolute;
