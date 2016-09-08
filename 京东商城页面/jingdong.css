@@ -43,7 +43,7 @@ body{
     cursor: auto;
     position: absolute;
     z-index: 9;
-    display: block;
+    display: none;
     padding-top:15px;
 }
 #shortcut .w .fl .place .item{
